@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="themify/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="header" class="" >
+
+        <div class="header-logo center">
+            <a href="#" class="header-logo-link">
+                <img src="./img/logo.jpg" alt="" class="header-logo-link-img">
+            </a>
+        </div>
+
+        <ul class="nav center">
+                <li class="header-item center text-light">
+                    <a href="#" class="header-item-text">Laptop</a>
+                    <ul class="subnav">
+                        <li class="all-item"><a class="all-link" href="#">Asus</a></li>
+                        <li class="all-item"><a class="all-link" href="#">Acer</a></li>
+                        <li class="all-item"><a class="all-link" href="#">Msi</a></li>
+                        <li class="all-item"><a class="all-link" href="#">Lenovo</a></li>
+                        <li class="all-item"><a class="all-link" href="#">Hp</a></li>
+                        <li class="all-item"><a class="all-link" href="#">Dell</a></li>
+                    </ul>
+                </li>
+    
+                <li class="header-item center">
+                    <a href="#" class="header-item-text">Linh kiện PC</a>
+                    <ul class="subnav">
+                        <li class="all-item"><a class="all-link" href="#">VGA</a></li>
+                        <li class="all-item"><a class="all-link" href="#">CPU</a></li>
+                        <li class="all-item"><a class="all-link" href="#">RAM</a></li>
+                    </ul>
+                </li>
+    
+                <li class="header-item center">
+                    <a href="#" class="header-item-text">Apple</a>
+                    <ul class="subnav">
+                        <li class="all-item"><a class="all-link" href="#">Macbook</a></li>
+                        <li class="all-item"><a class="all-link" href="#">iMac</a></li>
+                    </ul>
+                </li>
+    
+                <li class="header-item center">
+                    <a href="#" class="header-item-text">Màn hình</a>
+                    <ul class="subnav">
+                        <li class="all-item"><a class="all-link" href="#">LG</a></li>
+                        <li class="all-item"><a class="all-link" href="#">ASUS</a></li>
+                    </ul>
+                </li>
+    
+                <li class="header-item center">
+                    <a href="#" class="header-item-text">Bàn phím</a>
+                    <ul class="subnav">
+                        <li class="all-item"><a class="all-link" href="#">Corsair</a></li>
+                        <li class="all-item"><a class="all-link" href="#">Dare-U</a></li>
+                        <li class="all-item"><a class="all-link" href="#">Logitech</a></li>
+                        <li class="all-item"><a class="all-link" href="#">Rapoo</a></li>
+                        <li class="all-item"><a class="all-link" href="#">Fulhen</a></li>
+                    </ul>
+                </li>
+    
+                <li class="header-item center"> 
+                    <a href="#" class="header-item-text">Chuột</a>
+                    <ul class="subnav">
+                        <li class="all-item"><a class="all-link" href="#">Logitech</a></li>
+                        <li class="all-item"><a class="all-link" href="#">Razer</a></li>
+                        <li class="all-item"><a class="all-link" href="#">Corsair</a></li>
+                    </ul>
+                </li>
+                
+        </ul>
+        <!-- Icon search header / mở Modal-->
+        <div id="myOpen">
+        <ul class="header-icon center">
+                <li class="header-icon-item center">
+                    <a href="#" class="header-icon-link">
+                            <i class="ti-search"></i>
+                    </a>
+            </ul>
+        </div>
+     
+<!-- Modal -->
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-container">
+                        <div class="modal-close" >
+                           <i class="ti-close" ></i>
+                         </div>
+            <header class="modal-header">                             
+                    <i class ="ti-search" ></i>
+                        Tìm kiếm                                    
+            </header>
+            <div class="modal-body">
+                <label for="" class="modal-label">
+                    <i class="ti-search"></i>
+                        Tìm kiếm
+                </label>
+                <input type="text" class="modal-input" placeholder="Tìm kiếm...">
+                <button id="search">
+                    Tìm kiếm
+                </button>
+
+            </div>
+
+            <div class="modal-footer">
+                <p class="modal-help"> Cần <a href="https://www.google.com/">Hỗ Trợ?</a></p>
+            </div>
+
+        </div>
+        </div>
+
+        <!-- Hết Modal -->
+
+    <div class="container">
+        <div class="center">
+        <div class="list">
+<!-- Item 1 -->
+            <div class="item" data-key="1">
+                <div class="img">
+                    <img src="img/lap1.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Laptop Asus Rog Strix G15</div>
+                    <div class="des"> Laptop Asus Rog Strix G15 G513IE-HN246W là chiếc laptop gaming phổ thông mạnh mẽ và sở hữu cấu hình mạnh. 
+                        Dù vậy, sản phẩm laptop Asus Gaming này vẫn được trang bị nhiều khả năng có tính ứng dụng cao và đáp ứng
+                         được nhu cầu của người dùng là game thủ chuyên nghiệp.
+                    </div>
+                    <div class="price"><span class="num">23.690.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(1)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 2 -->
+            <div class="item" data-key="2">
+                <div class="img">
+                    <img src="img/lap2.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Apple MacBook Air M1 256GB 2020</div>
+                    <div class="des">Là dòng sản phẩm có thiết kế mỏng nhẹ, sang trọng và tinh tế cùng với đó là giá 
+                        thành phải chăng nên MacBook Air đã thu hút được đông đảo người dùng yêu thích và lựa chọn. 
+                    </div>
+                    <div class="price"><span class="num">22.690.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(2)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 3 -->
+            <div class="item" data-key="3">
+                <div class="img">
+                    <img src="img/lap3.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Apple Macbook Air M2 2022 8GB 256GB</div>
+                    <div class="des">Sau thành công của dòng Macbook M1 thì Apple lại chuẩn bị mang đến cho người dùng dòng sản phẩm Macbook Air 2022 
+                        với những điểm nâng cấp đáng chú ý. Bên cạnh đó mức giá thành lại thấp hơn so với hiện tại, chắc chắn rằng các iFan đang rất nóng lòng chờ đón sự xuất hiện của dòng sản phẩm mới này.
+                    </div>
+                    <div class="price"><span class="num">28.490.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(3)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 4 -->
+            <div class="item" data-key="4">
+                <div class="img">
+                    <img src="img/lap4.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Laptop Gaming MSI Bravo 15 B5DD 276VN</div>
+                    <div class="des">Một trong những mẫu laptop gaming chất lượng cao và 
+                        rất được ưa chuộng trong tầm giá chính là laptop MSI Gaming Bravo B5DD 276VN - 
+                        với bộ đôi CPU và GPU đến từ hãng AMD cùng với phiên bản Windows mới nhất sẽ cung cấp sức mạnh cho mọi tựa game.
+                    </div>
+                    <div class="price"><span class="num">17.450.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(4)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 5 -->
+            <div class="item" data-key="5">
+                <div class="img">
+                    <img src="img/lap5.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Laptop Gaming Acer Nitro 5 Eagle</div>
+                    <div class="des">Nitro là dòng laptop Gaming Acer, trong đó sản phẩm laptop gaming 
+                        Acer Nitro 5 Eagle AN515-57-54MV với thiết kế đậm chất gaming cùng hiệu năng ấn tượng.
+                    </div>
+                    <div class="price"><span class="num">21.790.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(5)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 6 -->
+            <div class="item" data-key="6">
+                <div class="img">
+                    <img src="img/lap6.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Laptop gaming MSI GF63 Thin 11SC</div>
+                    <div class="des">Laptop MSI Gaming GF63 Thin 11SC-664VN là sản phẩm thuộc 
+                        phân khúc giá tầm trung, phù hợp với những game thủ. Đây là dòng laptop 
+                        có vẻ ngoài nhỏ gọn nhưng vẫn mang đậm phong cách gaming.
+                    </div>
+                    <div class="price"><span class="num">16.990.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(6)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 7 -->
+            <div class="item" data-key="7">
+                <div class="img">
+                    <img src="img/lap7.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Laptop HP Gaming Victus 15-FA0031DX</div>
+                    <div class="des"> Laptop HP Gaming Victus 15-FA0031DX 6503849 mang đến một sản phẩm tuyệt vời cho cộng 
+                        đồng game thủ với màn hình đẹp mắt cùng khả năng hoạt động ấn tượng. Bạn sẽ có cơ hội trải nghiệm 
+                        chơi game mượt mà đi kèm với khung hình sắc nét, sinh động khi sở hữu laptop HP này trong tay.
+                    </div>
+                    <div class="price"><span class="num">16.990.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(7)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 8 -->
+            <div class="item" data-key="8">
+                <div class="img">
+                    <img src="img/lap8.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Laptop Dell Gaming G15 5515</div>
+                    <div class="des"> Laptop gaming nổi tiết với cấu hình vượt trội giúp người dùng có thể xử lý các
+                         tác vụ một cách nhanh chóng và mượt mà. Laptop Dell Gaming G15 5515 P105F004CGR cũng không 
+                         ngoại lệ, laptop sở hữu một thiết kế đậm chất game thủ cùng cấu hình ổn định.
+                    </div>
+                    <div class="price"><span class="num">18.490.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(8)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 9 -->
+            <div class="item" data-key="9">
+                <div class="img">
+                    <img src="img/lap9.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Laptop Gaming Acer Aspire 7</div>
+                    <div class="des"> Laptop gaming Acer Aspire 7 A715-42G-R4XX với hiệu năng mạnh mẽ 
+                        cùng thiết kế phong cách, hứa hẹn mang lại cho người dùng trải nghiệm làm việc và gaming mượt mà.
+                    </div>
+                    <div class="price"><span class="num">15.990.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(9)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 10 -->
+            <div class="item" data-key="10">
+                <div class="img">
+                    <img src="img/lap10.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Apple Macbook Pro 13 M2 2022</div>
+                    <div class="des"> Macbook Pro M2 2022 là phiên bản nâng cấp mạnh mẽ của Macbook Pro M1 với nhiều cải tiến vô cùng ấn tượng.
+                         Đây sẽ là chiếc laptop mang đến cho người dùng trải nghiệm cực tốt. 
+                        Từ đó giúp mọi hoạt động giải trí cũng như các công việc nặng như đồ họa, thiết kế đều được xử lý một cách mượt mà và nhanh chóng hơn.
+                    </div>
+                    <div class="price"><span class="num">30.590.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(10)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 11 -->
+            <div class="item" data-key="11">
+                <div class="img">
+                    <img src="img/lap11.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Laptop ASUS Gaming ROG Zephyrus G14</div>
+                    <div class="des">Laptop ASUS Gaming ROG Zephyrus G14 GA401QC-K2199W là chiếc laptop mà bạn nên sở hữu nếu muốn một cấu hình 
+                        máy tính chơi game với độ trải nghiệm hình 
+                        ảnh đồ họa mượt mà, âm thanh sống động. Ngoài ra còn có thiết kế nhỏ gọn và những tính năng vượt trội.
+                    </div>
+                    <div class="price"><span class="num">27.990.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(11)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 12 -->
+            <div class="item" data-key="12">
+                <div class="img">
+                    <img src="img/lap12.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Macbook Pro 14 inch 2021</div>
+                    <div class="des">Kế thừa những tinh hoa từ đời MacBook tốt nhất cùng với những nâng cấp đáng kể
+                         trong nhiều năm qua, Macbook Pro 14 inch dự kiến sẽ là mẫu laptop làm cho giới công nghệ "phát sốt",
+                          cũng như là cỗ máy xử lý công việc tối ưu hiệu quả.
+                    </div>
+                    <div class="price"><span class="num">45.990.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(12)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 13 -->
+            <div class="item" data-key="13">
+                <div class="img">
+                    <img src="img/lap13.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Macbook Pro 16 M1 Max 10 </div>
+                    <div class="des"> Không chỉ là điểm nhận biết trên các thiết bị smartphone, hiện nay tai thỏ đã xuất hiện trên thế hệ Macbook mới nhất. 
+                        Macbook Pro 16 M1 Max với thiết kế độc đáo, màn hình chất lượng mang lại trải nghiệm vượt  trội. Máy tính Macbook Pro 16 inch 2021 được 
+                        trang bị cấu hình cực khủng với chip Apple M1 Max với 10CPU, 32GPU đi kèm dung lượng lên đến RAM 32GB và bộ nhớ SSD 1TB mang lại hiệu suất vượt trội.
+                    </div>
+                    <div class="price"><span class="num">80.990.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(13)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 14 -->
+            <div class="item" data-key="14">
+                <div class="img">
+                    <img src="img/lap14.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Laptop ASUS Gaming TUF FX506</div>
+                    <div class="des"> Với những tựa game "bom tấn" gay cấn và hấp dẫn hiện nay, 
+                        game thủ sẽ cần đến laptop ASUS TUF Gaming F15 FX506LHB-HN188W chứa đựng CPU Intel
+                         thế hệ 10 cùng đồ họa GeForce GTX để có được trải nghiệm gaming tối ưu ở thiết lập đồ họa cao.
+                    </div>
+                    <div class="price"><span class="num">17.490.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(14)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 15 -->
+            <div class="item" data-key="15">
+                <div class="img">
+                    <img src="img/lap15.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Laptop HP Pavilion Aero 13-BE0229AU</div>
+                    <div class="des"> Laptop HP Pavilion Aero 13-BE0229AU 64U91PA được mệnh danh là chiếc laptop nhẹ nhất trong các dòng laptop của HP từ trước đến nay. 
+                        Bên cạnh độ mỏng nhẹ, sản phẩm laptop HP Pavilion này còn gây ấn tượng với các thông số và hiệu năng có thể đáp ứng, song hành trên mọi mặt trận.
+                    </div>
+                    <div class="price"><span class="num">16.990.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(15)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 16 -->
+            <div class="item" data-key="16">
+                <div class="img">
+                    <img src="img/lap16.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Laptop Acer Aspire 3 A315-58-53S6</div>
+                    <div class="des">Laptop Acer Aspire 3 A315-58-53S6  là một trong những mẫu laptop thịnh hành nhất hiện nay mà bạn có thể sở
+                         hữu để làm việc và giải trí một cách chất lượng nhất. Các tính năng và thông số của chiếc laptop Acer Aspire này bạn có 
+                         thể tham khảo bài viết dưới này nhé.
+                    </div>
+                    <div class="price"><span class="num">13.990.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(16)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 17 -->
+            <div class="item" data-key="17">
+                <div class="img">
+                    <img src="img/lap17.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Laptop Dell Inspiron 3511</div>
+                    <div class="des"> Chiếc laptop Dell Inspiron 3511 5174BLK sở hữu vẻ ngoài trẻ trung, 
+                        đơn giản và hiệu năng rất mạnh mẽ với con chip của nhà Intel, đáp ứng tốt nhu cầu làm việc, chơi game ổn định.
+                    </div>
+                    <div class="price"><span class="num">13.590.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(17)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 18 -->
+            <div class="item" data-key="18">
+                <div class="img">
+                    <img src="img/lap18.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Apple MacBook Pro 13 Touch Bar M1</div>
+                    <div class="des"> Máy tính bảng Macbook Pro M1 thế hệ mới vừa ra mắt được trang bị 
+                        vi xử lý M1 do chính Apple tự thiết kế. Hứa hẹn mang đến hiệu năng cực kì mạnh mẽ,
+                         thời gian sử dụng cực kì ấn tượng. Dưới đây là những đánh giá chi tiết về sản phẩm.
+                    </div>
+                    <div class="price"><span class="num">27.590.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(18)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 19 -->
+            <div class="item" data-key="19">
+                <div class="img">
+                    <img src="img/lap19.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Laptop Gaming Acer Nitro 5 Tiger</div>
+                    <div class="des">Laptop Acer Nitro 5 Tiger AN515-58-52SP mang vẻ ngoài phong thái sắc sảo, tích hợp hàng loạt công nghệ phần mềm đời mới và đặc 
+                        biệt là bộ vi xử lý Intel ổn định. Chứa đựng hiệu năng siêu vượt trội đã góp phần làm nên chiếc laptop Acer Nitrodẫn đầu phân khúc.
+                    </div>
+                    <div class="price"><span class="num">25.690.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(19)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 20 -->
+            <div class="item" data-key="20">
+                <div class="img">
+                    <img src="img/lap20.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Laptop Asus Zenbook 14</div>
+                    <div class="des"> Laptop ASUS Zenbook 14 UX3402ZA KM219W là một dòng laptop mang phong cách thiết kế độc đáo và đầy
+                         tính sáng tạo. Tuy chỉ mới ra mắt cách đây không lâu nhưng laptop Asus Zenbook này được đánh giá là sản phẩm đáng mua trong phân khúc.
+                    </div>
+                    <div class="price"><span class="num">25.690.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(20)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 21 -->
+            <div class="item" data-key="21">
+                <div class="img">
+                    <img src="img/lap21.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Laptop MSI Katana GF66</div>
+                    <div class="des"> Laptop MSI Katana GF66 11UD-696VN không còn là cái tên xa lạ đối với game thủ bởi vẻ ngoài độc lạ, thiết 
+                        kế mạnh mẽ và đi đầu về hiệu năng nên đảm bảo mang đến trải nghiệm tốt cho người dùng.
+                    </div>
+                    <div class="price"><span class="num">22.990.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(21)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 22 -->
+            <div class="item" data-key="22">
+                <div class="img">
+                    <img src="img/lap22.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Laptop Huawei Matebook 14</div>
+                    <div class="des"> Laptop Huawei MateBook 14 là mẫu máy tính xách tay sang trọng với màn 
+                        hình 2K chất lượng cao hứa hẹn mang lại trải nghiệm dùng vượt trội cho người dùng.
+                    </div>
+                    <div class="price"><span class="num">18.490.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(22)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+<!-- Item 23 -->
+            <div class="item" data-key="23">
+                <div class="img">
+                    <img src="img/lap23.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="title">Laptop Lenovo Thinkpad P14S G2</div>
+                    <div class="des">Laptop Lenovo ThinkPad P14S G2 T 20VX008GVN với kiểu dáng bắt mắt nên đa số sinh viên trẻ hiện nay đều rất yêu thích và lựa chọn. 
+                        Sản phẩm laptop Lenovo ThinkPad này cũng hội tụ đầy đủ các chức năng mà mọi người cần đến, đặc biệt dành cho học sinh, sinh viên.
+                    </div>
+                    <div class="price"><span class="num">33.490.000</span> ₫</div>
+                    <div class="btn">
+                        <button class="add">Add to cart</button>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(23)"> <i class='bx bxs-trash' ></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="notification">
+            <div class="noti noti-green">
+                <div class="noti-content">
+                    <div class="noti-icon"><i class='bx bxs-check-circle'></i></div>
+                    <div class="noti-body">
+                        <div class="msg">Sản phẩm đã được thêm vào giỏ hàng!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="noti noti-red">
+                    <div class="noti-icon"><i class='bx bxs-check-circle'></i></div>
+                    <div class="noti-body">
+                        <div class="msg">Sản phẩm đã được xoá khỏi giỏ hàng!</div>
+                    </div>
+            </div>
+        </div>
+        <ul class="listPage">
+        </ul>
+
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!--Bắt Đầu Nội Dung Giới Thiệu-->
+            <div class="noi-dung about">
+                <h2>Về Chúng Tôi</h2>
+                <p>Chúng tôi đảm bảo bạn sẽ có được những trải nghiệm tuyệt vời nhất khi sử dụng các dịch vụ và sản phẩm của LaptopShop.</p>
+                <ul class="social-icon">
+                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Giới Thiệu-->
+            <!--Bắt Đầu Nội Dung Đường Dẫn-->
+            <div class="noi-dung links">
+                <h2>Đường Dẫn</h2>
+                <ul>
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Về Chúng Tôi</a></li>
+                    <li><a href="#">Dịch Vụ</a></li>
+                    <li><a href="#">Điều Kiện Chính Sách</a></li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Đường Dẫn-->
+            <!--Bắt Đâu Nội Dung Liên Hệ-->
+            <div class="noi-dung contact">
+                <h2>Thông Tin Liên Hệ</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>Khu Phố 6,<br />
+                            Thủ Đức, Thành Phố Hồ Chí Minh<br />
+                            Việt Nam</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <p><a href="#">+84 123 456 789</a>
+                            <br />
+                            <a href="#">+84 987 654 321</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <p><a href="#">LaptopShop@gmail.com</a></p>
+                   </li>
+                    <li>
+                        <form class="form">
+                            <input type="email" class="form__field" placeholder="Đăng Ký Subscribe Email" />
+                            <button type="button" class="btn btn--primary  uppercase">Gửi</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Liên Hệ-->
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+    <!-- Script Modal -->
+    <script>
+            // Get the modal / event
+            var modal = document.getElementById("myModal");
+            
+            // Get the button that opens the modal / event
+            var btn = document.getElementById("myOpen");
+            
+            // Get the <span> element that closes the modal / event
+            var span = document.getElementsByClassName("modal-close")[0];
+            
+            // When the user clicks the button, open the modal / Mở modal
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal / Đóng modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it / Bấm ở ngoài modal cũng sẽ đóng modal
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+</body>
+</html>
